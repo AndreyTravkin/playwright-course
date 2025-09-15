@@ -4,6 +4,7 @@ import { url } from 'inspector';
 
 export default defineConfig({
   testDir: './tests',
+  testMatch: '**/*.spec.ts',   // <--- top-level
   webServer: {
    command: 'npm start',
    url: 'http://localhost:5000/',
