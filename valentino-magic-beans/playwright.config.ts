@@ -27,6 +27,7 @@ export default defineConfig({
     {
       name: 'chromium',
       testIgnore: /auth/,
+      testMatch: '**/*.spec.ts', // <--- add this line
       use: { 
         ...devices['Desktop Chrome'],
        },
